@@ -3,14 +3,56 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "趣练鹰"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/spell/spell",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/studyPlan/studyPlan",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" : {}
+        }
+    ],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "趣练鹰",
+		"navigationBarBackgroundColor": "#456BFF",
+		"backgroundColor": "#456BFF"
+	},
+	"tabBar": {
+		"color": "#989898",
+		"selectedColor": "#456BFF",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath":"static/tabBar/index-tab.png",
+				"selectedIconPath":"static/tabBar/index-tab.png",
+				"text": "首页推荐"
+			}, {
+				"pagePath": "pages/spell/spell",
+				"iconPath":"static/tabBar/unSelectedSpelling.png",
+				"selectedIconPath":"static/tabBar/spelling.png",
+				"text": "拼课"
+			},
+			{
+				"pagePath": "pages/studyPlan/studyPlan",
+				"iconPath":"static/tabBar/study-play.png",
+				"selectedIconPath":"static/tabBar/selected-study-play.png",
+				"text": "学习计划"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"iconPath":"static/tabBar/me.png",
+				"selectedIconPath":"static/tabBar/selected-me.png",
+				"text": "个人中心"
+			}
+		]
 	}
 }
