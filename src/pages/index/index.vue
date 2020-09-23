@@ -1,22 +1,40 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view>
-			<text class="title">{{title}}</text>
+	<view>
+		<navTop :title="navTop.title" :showBack='false' :bgColor='navTop.bgColor'></navTop>
+		<image mode="aspectFill" :src="src" class="header-img"></image>
+		<view class="content">
+			<view class="search-contain">
+				<input class="uni-input" focus placeholder="自动获得焦点" />
+				<view>上海</view>
+			</view>
 		</view>
 	</view>
 </template>
 
 <script>
+	import navTop from '@/components/navTop.vue'
+
 	export default {
+
+		components: {
+			navTop
+		},
+
 		data() {
 			return {
-				title: 'Hello'
+				navTop: {
+					title: '趣练鹰',
+					bgColor: '#ffaaaa'
+				},
+				src: '../../static/index/background.png',
+
 			}
 		},
+
 		onLoad() {
 
 		},
+
 		methods: {
 
 		}
@@ -24,26 +42,16 @@
 </script>
 
 <style>
+	.header-img {
+		width: 750rpx;
+		height: 423rpx;
+		display: block;
+	}
+
 	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin: 200rpx auto 50rpx auto;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
+		width: 750rpx;
+		border: 1rpx solid red;
+		position: absolute;
+		top: 158rpx;
 	}
 </style>
