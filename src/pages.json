@@ -3,11 +3,8 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "趣练鹰",
-				"navigationStyle":"custom",
-				"usingComponents":{
-					"nav-top":"@/components/navTop"
-				}
+				"navigationBarTitleText": "趣练鹰"
+				
 			}
 		}
 	    ,{
